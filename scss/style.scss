@@ -15,6 +15,7 @@ body {
 
 fieldset {
     border-radius: 4px;
+    border: 4px dotted hotpink;
 }
 
 .container {
@@ -42,9 +43,11 @@ input, select {
     border: 1px rgba(0, 0, 0, 0.308) solid;
 }
 
-select {
-    
+input:focus {
+    border: 1px solid hotpink;
+    border-radius: 4px;
 }
+
 /*Initial state for hidden alternative address*/
 #billing-form {
     display: none;
@@ -66,7 +69,14 @@ select {
 }
 
 #update-addresse {
-margin: 0 0 0 .9rem;
+    margin: 0 0 0 .9rem;
+    padding: 0 1rem;
+    background-color: rgb(241, 148, 195);
+    color: white;
+
+    &:hover {
+        background-color: hotpink;
+    }
 }
 
 @media (max-width: 576px) {
@@ -82,8 +92,6 @@ margin: 0 0 0 .9rem;
     
     label {
         padding-bottom: 1rem;
-        
-
     }
 }
 
