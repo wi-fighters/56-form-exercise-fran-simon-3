@@ -52,6 +52,7 @@
             </label>
             <label for="country">Country
                 <select name="country" id="country">
+                    <option disabled selected="selected">Select</option>
                     <optgroup label="Asia">
                         <option value="TH">Thailand</option>
                         <option value="JP">Japan</option>
@@ -67,8 +68,11 @@
                 </select>
             </label>
         </fieldset>
-
-        <fieldset>
+        <label for="alt-address">
+        <input type="checkbox" checked="checked" id="alt-address">
+        Delivery Address = Billing Address
+        </label>
+        <fieldset id="billing-form">
             <legend>Billing Address</legend>
             <label for="billing-first">First name
                 <input type="text" id="billing-first" name="first" placeholder="Kenny">
@@ -104,6 +108,7 @@
             </label>
             <label for="billing-country">Country
                 <select name="country" id="billing-country">
+                    <option disabled selected="selected">Select</option>
                     <optgroup label="Asia">
                         <option value="TH">Thailand</option>
                         <option value="JP">Japan</option>
