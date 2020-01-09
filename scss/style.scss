@@ -9,7 +9,7 @@ body * {
 
 body {
     width: 50%;
-    margin: 0 25%;
+    margin: 0 25vw;
     font-size: 1.5rem;
 }
 
@@ -67,4 +67,26 @@ select {
 
 #update-addresse {
 margin: 0 0 0 .9rem;
+}
+
+@media (max-width: 576px) {
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    
+    label {
+        padding-bottom: 1rem;
+        
+
+    }
+}
+
+
+
 }
